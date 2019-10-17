@@ -11,32 +11,21 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
     font-family: "et-book", -apple-system, "San Francisco", "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue", "Lucida Grand", sans-serif;
 }
 
-/* Hugo code blocks are <pre><code class="language-$lang">...</code></pre> */
-/*@media screen and (max-width: 760px) {
-    pre code {
-    }
-}*/
-
 code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.125rem;
     line-height: 1.6;
 }
 
+pre > code {
+    margin-left: unset !important;
+}
 pre code {
     width: 52.5%;
     font-size: 1.2rem;
-    padding-left: 2.5%;
     display: block;
     overflow-x: scroll;
 }
-
-/*@media (max-width: 760px) {
-    pre code {
-        width: 90%;
-        padding: 0;
-    }
- }*/
 
 /* ------------------------------------------------------------------------ */
 /* Brand details, such as a sidebar or top display. */
@@ -121,15 +110,13 @@ h1.content-title a:focus {
 /* Content meta-data such as author, publication date, etc. */
 .content-meta {
     display: block;
-    /*color: rgba(155, 155, 155, 1);*/
     color: rgba(100, 105, 110, 1);
     font-size: 1.1rem;
     margin-top: 1em;
 }
 
 .content-meta .author {
-    /*color: rgb(90, 20, 55)*/
-    color: rgba(65, 70, 75, 1);
+    color: rgb(90, 20, 55)
 }
 
 
@@ -150,13 +137,10 @@ h1.content-title a:focus {
 }
 .list-page li {
     margin: 0;
-    /*font-size: 95%;*/
 }
 .list-date {
   display: inline;
   font-size: 0.75em;
-  /* padding-right: 2em; */
-  /* margin-right: 2em; */
 }
 
 /* Table of Contents */
@@ -219,7 +203,6 @@ footer.page-footer hr {
 footer.page-footer ul.page-footer-menu {
 	list-style: none;
 	display: block;
-	/*text-align:center;*/
 	margin: 0;
 	padding: 0;
 }
@@ -279,7 +262,6 @@ details[open] summary {
     background: inherit;
     border: inherit;
     padding-bottom: 1rem;
-    /* max-width: 45rem; */
     overflow-x: auto;
     overflow-y: auto;
 }

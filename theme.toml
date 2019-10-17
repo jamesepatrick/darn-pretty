@@ -1,12 +1,12 @@
-name = "Tufte"
+name = "Darn Pretty"
 license = "MIT"
-licenselink = "https://github.com/shawnohare/hugo-tufte/blob/master/LICENSE.md"
-description = "A minimalist blog theme using Tufte-css."
-homepage = "http://github.com/shawnohare/hugo-tufte"
+licenselink = "https://github.com/jamesepatrick/darn-pretty/blob/master/LICENSE.md"
+description = "A fork of Shawn O'Hare's Hugo-Tufte theme."
+homepage = "http://github.com/shawnohare/jamesepatrick/darn-pretty/"
 tags = ["blog", "tufte", "minimal"]
 features = ["math", "tufte-css", "tufte"]
 min_version = 0.15
 
 [author]
-  name = "Shawn O'Hare"
-  homepage = "http://www.shawnohare.com"
+  name = "James Patrick"
+  homepage = "http://jpatrick.io/"
