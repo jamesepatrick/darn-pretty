@@ -1,0 +1,19 @@
+{
+  "name": "darn-pretty",
+  "version": "0.0.1",
+  "description": "a tufte css theme",
+  "main": "lib/entry.js",
+  "repository": "https://github.com/jamesepatrick/darn-pretty",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "tufte-css": "^1.7.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1",
+    "stylelint": "^13.7.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2"
+  }
+}
