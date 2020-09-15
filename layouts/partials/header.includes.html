@@ -6,9 +6,6 @@
 <!-- Syntax highlighting -->
 <!-- {{ partial "highlight.html" . }} -->
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 {{- $styles := resources.Get "css/main.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
  {{- if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">

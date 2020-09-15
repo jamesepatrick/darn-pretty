@@ -2,4 +2,5 @@
 
 @import "normalize.css";
 @import "tufte-css/tufte.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 @import "darn-pretty.css";
