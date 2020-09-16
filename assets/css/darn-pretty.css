@@ -4,8 +4,6 @@
 /* accomodate a blog-like site. */
 /* ------------------------------------------------------------------------ */
 
-@import "tufte-css/tufte.css";
-
 /* When setting the primary font stack, apply it to the Pure grid units along */
 /* with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use */
 /* specific font stacks to ensure the greatest OS/browser compatibility. */
