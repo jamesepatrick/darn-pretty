@@ -277,3 +277,9 @@ details[open] summary {
   overflow-x: auto;
   overflow-y: auto;
 }
+
+.feather + span,
+.feather + span::after,
+.feather + span::before {
+  margin-left: 0.3em;
+}

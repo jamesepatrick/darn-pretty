@@ -6,7 +6,6 @@
   "repository": "https://github.com/jamesepatrick/darn-pretty",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "normalize.css": "^8.0.1",
     "tufte-css": "^1.7.2"
   },
