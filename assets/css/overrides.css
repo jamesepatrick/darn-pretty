@@ -1,0 +1,36 @@
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+hr {
+  border-top: 1px solid var(--foreground);
+  opacity: 0.5;
+}
+
+.danger {
+  color: var(--red);
+}
+
+a:link,
+.tufte-underline,
+.hover-tufte-underline:hover {
+  text-decoration: none;
+  background: -webkit-linear-gradient(var(--background), var(--background)),
+    -webkit-linear-gradient(var(--background), var(--background)),
+    -webkit-linear-gradient(currentColor, currentColor);
+  background: linear-gradient(var(--background), var(--background)),
+    linear-gradient(var(--background), var(--background)),
+    linear-gradient(currentColor, currentColor);
+  -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-shadow: 0.03em 0 var(--background), -0.03em 0 var(--background),
+    0 0.03em var(--background), 0 -0.03em var(--background),
+    0.06em 0 var(--background), -0.06em 0 var(--background),
+    0.09em 0 var(--background), -0.09em 0 var(--background),
+    0.12em 0 var(--background), -0.12em 0 var(--background),
+    0.15em 0 var(--background), -0.15em 0 var(--background);
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+}
