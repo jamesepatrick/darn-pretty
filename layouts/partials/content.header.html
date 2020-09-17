@@ -32,7 +32,7 @@
 
       {{ if .Params.categories }}
       <br>
-      <i data-feather="calendar"></i>
+      <i data-feather="tag"></i>
       <span>
       {{ range .Params.categories }}
           <a  href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
