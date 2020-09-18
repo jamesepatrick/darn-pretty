@@ -34,3 +34,35 @@ a:link,
     0.15em 0 var(--background), -0.15em 0 var(--background);
   background-position: 0% 93%, 100% 93%, 0% 93%;
 }
+
+header.brand h1 {
+  color: var(--foreground);
+}
+
+header.brand h2 {
+  color: var(--foreground);
+  opacity: 0.7;
+}
+
+nav.menu li a {
+  color: var(--foreground);
+  opacity: 0.7;
+}
+
+footer.page-footer a {
+  color: var(--foreground);
+}
+
+/* TODO this is a rather unpleasant wrk around. It'd be worth refactoring the*/
+/* darn pretty based CSS to not require this. */
+.content-meta {
+  color: var(--foreground);
+  opacity: 0.6;
+}
+
+pre code {
+  overflow-x: auto;
+}
+pre > code {
+  width: unset;
+}
