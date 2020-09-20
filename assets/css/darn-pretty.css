@@ -1,12 +1,3 @@
-/* ------------------------------------------------------------------------ */
-/* darn-pretty.css */
-/* Contains extensions to the original tufte.css styles to */
-/* accomodate a blog-like site. */
-/* ------------------------------------------------------------------------ */
-
-/* When setting the primary font stack, apply it to the Pure grid units along */
-/* with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use */
-/* specific font stacks to ensure the greatest OS/browser compatibility. */
 html,
 button,
 input,
@@ -35,52 +26,58 @@ pre {
   }
 
   & code {
-    width: 52.5%;
-    font-size: 1.2rem;
     display: block;
+    font-size: 1.2rem;
     overflow-x: scroll;
+    width: 52.5%;
   }
 }
 
-/* ------------------------------------------------------------------------ */
+h1.content-title {
+  & a:link,
+  & a:visited {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+  }
+  & a:hover,
+  & a:focus {
+    color: darkgray;
+  }
+}
+
 /* Brand details, such as a sidebar or top display. */
-/* ------------------------------------------------------------------------ */
 header.brand {
   margin-top: 0.5em;
 
-  /* Main brand title */
   & h1 {
-    margin: 0;
-    font-weight: 400;
     color: rgba(65, 70, 75, 1);
+    font-weight: 400;
+    margin: 0;
   }
 
   & h2 {
+    color: rgba(100, 105, 110, 1);
     margin: 0;
     padding-top: 0;
-    /*font-style: normal;*/
-    /*font-weight: 200;*/
-    color: rgba(100, 105, 110, 1);
   }
 
   & hr {
-    text-align: left;
-    margin-left: 0;
-    width: 75%;
     border-color: rgba(250, 250, 250, 0.25);
+    margin-left: 0;
+    text-align: left;
+    width: 75%;
   }
 }
 
 nav.menu {
   & ul {
-    list-style: none;
     display: block;
-    /*text-align:center;*/
-    margin-top: 0.75rem;
-    padding: 0;
-    max-width: 45rem;
-    /* Width is the same as tufte.css body */
     font-size: 0.9rem;
+    list-style: none;
+    margin-top: 0.75rem;
+    max-width: 45rem;
+    padding: 0;
     width: 87.5%;
   }
 
@@ -89,10 +86,10 @@ nav.menu {
     margin-right: 1rem;
 
     & a {
-      text-decoration: none;
       background: transparent;
       color: rgba(65, 70, 75, 1);
       letter-spacing: 0.05em;
+      text-decoration: none;
       text-transform: uppercase;
 
       &:hover,
@@ -105,26 +102,10 @@ nav.menu {
   }
 }
 
-/* ------------------------------------------------------------------------ */
-/* Generic content, such as the index list pages */
-/* ------------------------------------------------------------------------ */
-
-h1.content-title {
-  & a:link,
-  & a:visited {
-    background: transparent;
-    text-decoration: none;
-    color: inherit;
-  }
-  & a:hover,
-  & a:focus {
-    color: darkgray;
-  }
-}
 /* Content meta-data such as author, publication date, etc. */
 .content-meta {
-  display: block;
   color: rgba(100, 105, 110, 1);
+  display: block;
   font-size: 1.1rem;
   margin-top: 1em;
 
@@ -139,15 +120,12 @@ h1.content-title {
   margin-left: 1em;
 }
 
-/* ------------------------------------------------------------------------ */
-/* Styling for listing pages. */
-/* ------------------------------------------------------------------------ */
 .list-page {
   & ul {
     list-style-type: none;
     margin: -0.25em;
-    width: 87.5%;
     max-width: 45rem;
+    width: 87.5%;
   }
   & li {
     margin: 0;
@@ -160,11 +138,6 @@ h1.content-title {
 
 /* Table of Contents */
 .toc {
-  /*float: right;*/
-  /*padding: 0rem 1rem 1rem 1rem;*/
-  /*margin-top: 1rem;*/
-  /*border-left: 1px solid #eee;*/
-
   & summary {
     font-size: 1.5rem;
     margin-bottom: -1.5rem;
@@ -172,9 +145,10 @@ h1.content-title {
   }
 
   & ul {
-    list-style: none;
     display: block;
-    /*margin-top: 0.75rem;*/
+    list-style: none;
+
+    /* margin-top: 0.75rem; */
     padding: 0;
     width: 87.5%;
   }
@@ -189,62 +163,56 @@ table {
   font-size: 1.4rem;
 }
 
-/* Footer, but with a different name to avoid conflicts with tufte.css */
-footer.page-footer {
-  padding-top: 1em;
-  margin-top: 3em;
-  color: #aaa;
-  width: 95%;
-  max-width: 45rem;
-  & p {
-    font-size: 1.2rem;
-    margin: 0em;
-    /* light font looked odd on chrome */
-    /*font-weight: lighter;*/
-  }
-  & a {
-    color: rgba(65, 70, 75, 1);
-    text-decoration: none;
-    background: transparent;
-  }
-  & hr {
-    text-align: left;
-    margin-left: 0;
-    width: 100%;
-    border-color: rgba(250, 250, 250, 0.25);
-  }
-  & ul.page-footer-menu {
-    list-style: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-    & li {
-      display: inline-block;
-      margin-right: 0.5rem;
-      font-size: 55%;
-    }
-  }
-}
-
 .copyright {
   & p {
     font-size: 90%;
   }
 }
 
-/* ------------------------------------------------------------------------ */
-/* Post Archive. */
-/* ------------------------------------------------------------------------ */
-/* We utilize the html5 summary tags in order to create a post archive */
-/* with built-in folding. */
+/* Footer, but with a different name to avoid conflicts with tufte.css */
+footer.page-footer {
+  color: #aaa;
+  margin-top: 3em;
+  max-width: 45rem;
+  padding-top: 1em;
+  width: 95%;
+  & p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  & a {
+    background: transparent;
+    color: rgba(65, 70, 75, 1);
+    text-decoration: none;
+  }
+
+  & hr {
+    border-color: rgba(250, 250, 250, 0.25);
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  & ul.page-footer-menu {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & li {
+      display: inline-block;
+      font-size: 55%;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 details {
   border-radius: 3px;
-
   & summary {
-    vertical-align: top;
-    padding: 0.3em 0.5em;
     outline: none;
-    /*color: rgba(65, 70, 75, 1);*/
+    padding: 0.3em 0.5em;
+    vertical-align: top;
     &.year {
       font-size: 1.5rem;
     }
@@ -252,25 +220,26 @@ details {
 }
 
 /* ------------------------------------------------------------------------ */
+
 /*  MathJax styling
 /* ------------------------------------------------------------------------ */
 .MathJax {
-  font: inherit;
-  color: inherit;
-  font-size: 100%;
   background: inherit;
   border: inherit;
+  color: inherit;
+  font: inherit;
+  font-size: 100%;
 }
 
 .MathJax_Display {
-  font: inherit;
-  color: inherit;
-  font-size: 100%;
   background: inherit;
   border: inherit;
-  padding-bottom: 1rem;
+  color: inherit;
+  font: inherit;
+  font-size: 100%;
   overflow-x: auto;
   overflow-y: auto;
+  padding-bottom: 1rem;
 }
 
 .feather {

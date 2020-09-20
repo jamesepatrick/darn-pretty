@@ -15,24 +15,28 @@ hr {
 a:link,
 .tufte-underline,
 .hover-tufte-underline:hover {
-  text-decoration: none;
   background: -webkit-linear-gradient(var(--background), var(--background)),
     -webkit-linear-gradient(var(--background), var(--background)),
     -webkit-linear-gradient(currentColor, currentColor);
   background: linear-gradient(var(--background), var(--background)),
     linear-gradient(var(--background), var(--background)),
     linear-gradient(currentColor, currentColor);
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+  background-repeat: no-repeat, no-repeat, repeat-x;
   -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
   -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
   background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-decoration: none;
   text-shadow: 0.03em 0 var(--background), -0.03em 0 var(--background),
     0 0.03em var(--background), 0 -0.03em var(--background),
     0.06em 0 var(--background), -0.06em 0 var(--background),
     0.09em 0 var(--background), -0.09em 0 var(--background),
     0.12em 0 var(--background), -0.12em 0 var(--background),
     0.15em 0 var(--background), -0.15em 0 var(--background);
-  background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+footer.page-footer a {
+  color: var(--foreground);
 }
 
 header.brand h1 {
@@ -49,12 +53,6 @@ nav.menu li a {
   opacity: 0.7;
 }
 
-footer.page-footer a {
-  color: var(--foreground);
-}
-
-/* TODO this is a rather unpleasant wrk around. It'd be worth refactoring the*/
-/* darn pretty based CSS to not require this. */
 .content-meta {
   color: var(--foreground);
   opacity: 0.6;
