@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("https://unpkg.com/firacode/distr/eot/FiraCode-Regular.eot")
+      format("embedded-opentype"),
+    url("https://unpkg.com/firacode/distr/woff2/FiraCode-Regular.woff2")
+      format("woff2"),
+    url("https://unpkg.com/firacode/distr/woff/FiraCode-Regular.woff")
+      format("woff"),
+    url("https://unpkg.com/firacode/distr/ttf/FiraCode-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+code,
+pre > code {
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+}
