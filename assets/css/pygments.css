@@ -1,0 +1,122 @@
+@import "vars";
+
+.chroma {
+  background-color: var(--bg);
+  color: var(--fg);
+
+  & .lntd {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  & .lntable {
+    border: 0;
+    border-spacing: 0;
+    display: block;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: auto;
+  }
+
+  & .hl {
+    background-color: #21242b;
+    display: block;
+    width: 100%;
+  }
+
+  & .lnt {
+    color: #1d2026;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+  }
+
+  & .ln {
+    color: var(--fg-alt);
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+  }
+
+  & .c,
+  & .c1,
+  & .ch,
+  & .cm,
+  & .cs {
+    color: var(--comment);
+  }
+
+  & .cp,
+  & .cpf,
+  & .gd,
+  & .k,
+  & .kc,
+  & .kn,
+  & .kp,
+  & .kr,
+  & .nt,
+  & .o,
+  & .ow {
+    color: var(--red);
+  }
+
+  & .dl,
+  & .s,
+  & .s1,
+  & .s2,
+  & .sa,
+  & .sb,
+  & .sc,
+  & .sd,
+  & .se,
+  & .sh,
+  & .si,
+  & .sr,
+  & .ss,
+  & .sx {
+    color: var(--yellow);
+  }
+
+  & .il,
+  & .m,
+  & .mb,
+  & .mf,
+  & .mh,
+  & .mi,
+  & .mo {
+    color: var(--purple);
+  }
+
+  & .kt {
+    color: var(--blue);
+  }
+
+  & .kd,
+  & .nb,
+  & .nl,
+  & .nv,
+  & .vc,
+  & .vg,
+  & .vi {
+    color: var(--blue);
+    font-style: italic;
+  }
+
+  & .na,
+  & .nc,
+  & .nf {
+    color: var(--green);
+  }
+
+  & .ge,
+  & .gl {
+    text-decoration: underline;
+  }
+
+  & .gh,
+  & .gi,
+  & .gu {
+    text-decoration: bold;
+  }
+}

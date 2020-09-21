@@ -4,3 +4,18 @@
   --primary: #51afef;
   --red: #ff6c6b;
 }
+
+.chroma {
+  --bg: #1d2026;
+  --bg-alt: #282c34;
+  --fg: #bbc2cf;
+  --fg-alt: #5b6268;
+  --red: #ff6c6b;
+  --orange: #da8548;
+  --green: #98be65;
+  --teal: #4db5bd;
+  --yellow: #ecbe7b;
+  --blue: #51afef;
+  --purple: #a9a1e1;
+  --comment: #6272a4;
+}
