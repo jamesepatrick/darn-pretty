@@ -10,35 +10,44 @@
 {{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }}
 {{ if or (eq .Type "post") (.Params.meta)  }}
   <span class="content-meta">
+    <ul>
     {{ if .Params.author }}
+    <li>
       <i data-feather="user"></i>
       <span class="author">
           {{ .Params.author }}
       </span>
+    </li>
     {{ end }}
 
 
       {{ if not .Params.hidedate }}
+    <li>
       <i data-feather="calendar"></i>
       <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-      {{end }}
+    </li>
+    {{end }}
 
     {{ if not .Params.hidereadtime }}
+    <li>
       <i data-feather="clock"></i>
       <span>
           {{ .ReadingTime }} min read
       </span>
+    </li>
       {{ end }}
 
       {{ if .Params.categories }}
-      <br>
+      <li>
       <i data-feather="tag"></i>
       <span>
       {{ range .Params.categories }}
           <a  href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
       {{ end }}
+      </li>
       </span>
     {{ end }}
+    </ul>
   </span>
 {{ end }}
 {{ end }}
